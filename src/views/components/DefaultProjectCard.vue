@@ -7,17 +7,17 @@
             <img
               :src="item.movie_image"
               alt="img-blur-shadow"
-              class="shadow img-fluid border-radius-xl"
+              class="shadow card-img img-fluid border-radius-xl"
             />
           </a>
         </div>
         <div class="px-1 pb-0 card-body">
           <p class="mb-2 text-sm text-gradient text-dark">{{ label }}</p>
           <a href="javascript:;">
-            <h5>{{ item.movie_name }}</h5>
+            <h5>{{ minimizestr(item.movie_name) }}</h5>
           </a>
           <p class="mb-4 text-sm">
-            {{ item.movie_description }}
+            {{ minimizestr(item.movie_description) }}
           </p>
           <div class="d-flex align-items-center justify-content-between">
             <button
@@ -25,7 +25,7 @@
               class="mb-0 btn btn-sm"
               :class="`btn-outline-${action.color}`"
             >
-              {{ action.label }}
+              View Details
             </button>
             <div class="mt-2 avatar-group">
               <a
@@ -48,11 +48,13 @@
 </template>
 
 <script>
+import { mapActions,mapGetters } from 'vuex'
 import axios from 'axios';
 export default {
   data() {
     return {
-      movies:[]
+      movies:[],
+      movies_name:''
     }
   },
   name: "DefaultProjectCard",
@@ -87,7 +89,20 @@ export default {
       default: () => [],
     },
   },
+  methods: {
+      ...mapActions({
+          getMoviesDetails : "tamilmovies/getMoviesDetails",
+        }),
+      ...mapGetters({
+        product: "tamilmovies/product",
+      }),
+      minimizestr(str){
+        if(str.length > 25) str = str.substring(0,25)+'...'
+        return str;   
+      }
+  },
   mounted(){
+    this.$store.dispatch('tamilmovies/getMoviesDetails')
     const options = {
       method: 'GET',
       url: 'http://movie_cms.test/api/getMovies'
@@ -95,7 +110,6 @@ export default {
     axios(options)
     .then(response => {
       this.movies=response.data.movies
-      console.log(this.movies)
     })
     .catch(error => {
       console.error(error);

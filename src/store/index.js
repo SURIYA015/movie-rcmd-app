@@ -1,7 +1,11 @@
 import { createStore } from "vuex";
 import bootstrap from "bootstrap/dist/js/bootstrap.min.js";
+import tamilmovies from "./tamilmovies";
 
 export default createStore({
+  modules:{
+    tamilmovies
+  },
   state: {
     hideConfigButton: false,
     isPinned: true,
@@ -68,4 +72,5 @@ export default createStore({
     },
   },
   getters: {},
+
 });

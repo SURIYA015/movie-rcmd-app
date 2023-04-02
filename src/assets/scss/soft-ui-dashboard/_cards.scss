@@ -18,6 +18,11 @@
     padding: $card-footer-padding;
     background-color: transparent;
   }
+
+  .card-img{
+    height: 30vh;
+    object-fit: cover;
+  }
 }
 
 .author {
