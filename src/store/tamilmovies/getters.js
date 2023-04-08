@@ -1,3 +1,3 @@
-export function product(state) {
-  return state;
+export function getMovies(state) {
+  return state.movies;
 }

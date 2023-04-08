@@ -1,6 +1,6 @@
 <template>
   <div class="row">
-    <div class="col-xl-3 col-md-6 mb-5" v-for="(item, index) in movies" :key="index">
+    <div class="col-xl-3 col-md-6 mb-5" v-for="(item, index) in movies()" :key="index">
       <div class="card card-blog card-plain">
         <div class="position-relative">
           <a class="shadow-xl d-block border-radius-xl">
@@ -49,14 +49,14 @@
 
 <script>
 import { mapActions,mapGetters } from 'vuex'
-import axios from 'axios';
+//import axios from 'axios';
 export default {
-  data() {
-    return {
-      movies:[],
-      movies_name:''
-    }
-  },
+  // data() {
+  //   return {
+  //     movies:[],
+  //     movies_name:''
+  //   }
+  // },
   name: "DefaultProjectCard",
   props: {
     image: {
@@ -94,7 +94,7 @@ export default {
           getMoviesDetails : "tamilmovies/getMoviesDetails",
         }),
       ...mapGetters({
-        product: "tamilmovies/product",
+        movies: "tamilmovies/getMovies",
       }),
       minimizestr(str){
         if(str.length > 25) str = str.substring(0,25)+'...'
@@ -102,18 +102,7 @@ export default {
       }
   },
   mounted(){
-    this.$store.dispatch('tamilmovies/getMoviesDetails')
-    const options = {
-      method: 'GET',
-      url: 'http://movie_cms.test/api/getMovies'
-    };
-    axios(options)
-    .then(response => {
-      this.movies=response.data.movies
-    })
-    .catch(error => {
-      console.error(error);
-    });
+    this.getMoviesDetails()
   }
 };
 </script>

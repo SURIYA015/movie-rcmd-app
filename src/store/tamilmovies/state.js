@@ -5,8 +5,6 @@
 
 export default function () {
     return {
-        title: "",
-        description: "",
-        price: ""
+        movies:[]
     }
 }
