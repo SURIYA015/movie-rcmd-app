@@ -19,7 +19,7 @@
         </sidenav-collapse>
       </li>
       <li class="nav-item">
-        <sidenav-collapse navText="Best Kanada Movies" :to="{ name: 'Billing' }">
+        <sidenav-collapse navText="Best Kanada Movies" :to="{ name: 'KannadaMovies' }">
           <template #icon>
             <credit-card />
           </template>
@@ -27,7 +27,7 @@
       </li>
 
       <li class="nav-item">
-        <sidenav-collapse navText="Best Malyalam Movies" :to="{ name: 'Billing' }">
+        <sidenav-collapse navText="Best Malyalam Movies" :to="{ name: 'Rtl' }">
           <template #icon>
             <credit-card />
           </template>
@@ -35,7 +35,7 @@
       </li>
 
       <li class="nav-item">
-        <sidenav-collapse navText="Best Hindi Movies" :to="{ name: 'Billing' }">
+        <sidenav-collapse navText="Best Hindi Movies" :to="{ name: 'Rtl' }">
           <template #icon>
             <credit-card />
           </template>
@@ -43,7 +43,7 @@
       </li>
 
       <li class="nav-item">
-        <sidenav-collapse navText="Best Hollywood Movies" :to="{ name: 'Billing' }">
+        <sidenav-collapse navText="Best Hollywood Movies" :to="{ name: 'Rtl' }">
           <template #icon>
             <credit-card />
           </template>

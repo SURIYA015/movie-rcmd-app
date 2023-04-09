@@ -2,11 +2,14 @@ import { createStore } from "vuex";
 import bootstrap from "bootstrap/dist/js/bootstrap.min.js";
 import tamilmovies from "./tamilmovies";
 import telugumovies from "./telugumovies";
+import kannadamovies from "./kannadamovies";
+
 
 export default createStore({
   modules:{
     tamilmovies,
-    telugumovies
+    telugumovies,
+    kannadamovies
   },
   state: {
     hideConfigButton: false,

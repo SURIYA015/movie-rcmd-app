@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import TamilMovies from "@/views/TamilMovies.vue";
 import TeluguMovies from "@/views/TeluguMovies.vue";
-import Billing from "@/views/Billing.vue";
+import KannadaMovies from "@/views/KannadaMovies.vue";
 import VirtualReality from "@/views/VirtualReality.vue";
 import Profile from "@/views/Profile.vue";
 import Rtl from "@/views/Rtl.vue";
@@ -25,9 +25,9 @@ const routes = [
     component: TeluguMovies,
   },
   {
-    path: "/billing",
-    name: "Billing",
-    component: Billing,
+    path: "/kannadamovies",
+    name: "KannadaMovies",
+    component: KannadaMovies,
   },
   {
     path: "/virtual-reality",
