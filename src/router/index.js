@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Dashboard from "@/views/Dashboard.vue";
+import TamilMovies from "@/views/TamilMovies.vue";
 import Tables from "@/views/Tables.vue";
 import Billing from "@/views/Billing.vue";
 import VirtualReality from "@/views/VirtualReality.vue";
@@ -11,13 +11,13 @@ import SignUp from "@/views/SignUp.vue";
 const routes = [
   {
     path: "/",
-    name: "/",
-    redirect: "/dashboard",
+    name: "Tamilmovies ",
+    component: TamilMovies,
   },
   {
-    path: "/dashboard",
-    name: "Dashboard",
-    component: Dashboard,
+    path: "/tamilmovies",
+    name: "TamilMovies",
+    component: TamilMovies,
   },
   {
     path: "/tables",

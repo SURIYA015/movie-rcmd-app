@@ -8,7 +8,7 @@
             <p class="text-sm">Architects design houses</p>
           </div>
           <div class="p-3 card-body">
-              <default-project-card
+              <tamil-movies-project-card
                 title="Modern"
                 :image="img1"
                 label="Project #2"
@@ -49,7 +49,7 @@
   </div>
 </template>
 <script>
-import DefaultProjectCard from "./components/DefaultProjectCard.vue";
+import TamilMoviesProjectCard from "./components/TamilMoviesProjectCard.vue";
 import US from "../assets/img/icons/flags/US.png";
 import DE from "../assets/img/icons/flags/DE.png";
 import GB from "../assets/img/icons/flags/GB.png";
@@ -116,7 +116,7 @@ export default {
     };
   },
   components: {
-    DefaultProjectCard,
+    TamilMoviesProjectCard,
   },
 };
 </script>

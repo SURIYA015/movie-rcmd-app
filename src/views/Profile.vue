@@ -436,7 +436,7 @@
           </div>
           <div class="p-3 card-body">
             <div class="row">
-              <default-project-card
+              <tamil-movies-project-card
                 title="Modern"
                 :image="img1"
                 label="Project #2"
@@ -466,7 +466,7 @@
                 }"
               />
 
-              <default-project-card
+              <tamil-movies-project-card
                 title="Scandinavian"
                 :image="img2"
                 label="Project #1"
@@ -496,7 +496,7 @@
                 }"
               />
 
-              <default-project-card
+              <tamil-movies-project-card
                 title="Minimalist"
                 :image="img3"
                 label="Project #3"
@@ -560,7 +560,7 @@ import {
   faTwitter,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-import DefaultProjectCard from "./components/DefaultProjectCard.vue";
+import TamilMoviesProjectCard from "./components/TamilMoviesProjectCard.vue";
 import PlaceHolderCard from "@/examples/Cards/PlaceHolderCard.vue";
 import setNavPills from "@/assets/js/nav-pills.js";
 import setTooltip from "@/assets/js/tooltip.js";
@@ -571,7 +571,7 @@ export default {
     SoftSwitch,
     ProfileInfoCard,
     SoftAvatar,
-    DefaultProjectCard,
+    TamilMoviesProjectCard,
     PlaceHolderCard,
   },
   data() {

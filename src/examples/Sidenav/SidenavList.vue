@@ -5,21 +5,21 @@
   >
     <ul class="navbar-nav">
       <li class="nav-item">
-        <sidenav-collapse navText="Top Tamil Movies" :to="{ name: 'Dashboard' }">
+        <sidenav-collapse navText="Best Tamil Movies" :to="{ name: 'TamilMovies' }">
           <template #icon>
             <shop />
           </template>
         </sidenav-collapse>
       </li>
       <li class="nav-item">
-        <sidenav-collapse navText="Top Sports" :to="{ name: 'Tables' }">
+        <sidenav-collapse navText="Best Telugu Movies" :to="{ name: 'Tables' }">
           <template #icon>
             <office />
           </template>
         </sidenav-collapse>
       </li>
       <li class="nav-item">
-        <sidenav-collapse navText="Top Rich Country" :to="{ name: 'Billing' }">
+        <sidenav-collapse navText="Best Kanada Movies" :to="{ name: 'Billing' }">
           <template #icon>
             <credit-card />
           </template>
@@ -27,7 +27,7 @@
       </li>
 
       <li class="nav-item">
-        <sidenav-collapse navText="Top Actors" :to="{ name: 'Billing' }">
+        <sidenav-collapse navText="Best Malyalam Movies" :to="{ name: 'Billing' }">
           <template #icon>
             <credit-card />
           </template>
@@ -35,7 +35,7 @@
       </li>
 
       <li class="nav-item">
-        <sidenav-collapse navText="Top Actress" :to="{ name: 'Billing' }">
+        <sidenav-collapse navText="Best Hindi Movies" :to="{ name: 'Billing' }">
           <template #icon>
             <credit-card />
           </template>
@@ -43,7 +43,7 @@
       </li>
 
       <li class="nav-item">
-        <sidenav-collapse navText="Top Games" :to="{ name: 'Billing' }">
+        <sidenav-collapse navText="Best Hollywood Movies" :to="{ name: 'Billing' }">
           <template #icon>
             <credit-card />
           </template>

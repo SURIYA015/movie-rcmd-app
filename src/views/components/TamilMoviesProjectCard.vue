@@ -57,7 +57,7 @@ export default {
   //     movies_name:''
   //   }
   // },
-  name: "DefaultProjectCard",
+  name: "TamilMoviesProjectCard",
   props: {
     image: {
       type: String,
