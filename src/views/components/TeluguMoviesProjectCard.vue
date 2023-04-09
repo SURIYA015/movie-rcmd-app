@@ -57,7 +57,7 @@ export default {
   //     movies_name:''
   //   }
   // },
-  name: "TamilMoviesProjectCard",
+  name: "TeluguMoviesProjectCard",
   props: {
     image: {
       type: String,
@@ -91,10 +91,10 @@ export default {
   },
   methods: {
       ...mapActions({
-        getTamilMoviesDetails : "tamilmovies/getTamilMoviesDetails",
+        getTeluguMoviesDetails : "telugumovies/getTeluguMoviesDetails",
         }),
       ...mapGetters({
-        movies: "tamilmovies/getTamilMovies",
+        movies: "telugumovies/getTeluguMovies",
       }),
       minimizestr(str){
         if(str.length > 25) str = str.substring(0,25)+'...'
@@ -102,7 +102,7 @@ export default {
       }
   },
   mounted(){
-    this.getTamilMoviesDetails()
+    this.getTeluguMoviesDetails()
   }
 };
 </script>

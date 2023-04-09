@@ -12,7 +12,7 @@
         </sidenav-collapse>
       </li>
       <li class="nav-item">
-        <sidenav-collapse navText="Best Telugu Movies" :to="{ name: 'Tables' }">
+        <sidenav-collapse navText="Best Telugu Movies" :to="{ name: 'TeluguMovies' }">
           <template #icon>
             <office />
           </template>

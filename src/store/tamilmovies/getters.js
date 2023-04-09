@@ -1,3 +1,3 @@
-export function getMovies(state) {
+export function getTamilMovies(state) {
   return state.movies;
 }
