@@ -43,7 +43,7 @@
       </li>
 
       <li class="nav-item">
-        <sidenav-collapse navText="Best Hollywood Movies" :to="{ name: 'Rtl' }">
+        <sidenav-collapse navText="Best Hollywood Movies" :to="{ name: 'HollywoodMovies' }">
           <template #icon>
             <credit-card />
           </template>
@@ -60,13 +60,13 @@
           </template>
         </sidenav-collapse>
       </li> -->
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <sidenav-collapse navText="RTL" :to="{ name: 'Rtl' }">
           <template #icon>
             <settings />
           </template>
         </sidenav-collapse>
-      </li>
+      </li> -->
       <li class="mt-3 nav-item">
         <h6
           class="text-xs ps-4 text-uppercase font-weight-bolder opacity-6"
@@ -125,7 +125,7 @@ import CreditCard from "../../components/Icon/CreditCard.vue";
 // import CustomerSupport from "../../components/Icon/CustomerSupport.vue";
 // import Document from "../../components/Icon/Document.vue";
 import Spaceship from "../../components/Icon/Spaceship.vue";
-import Settings from "../../components/Icon/Settings.vue";
+//import Settings from "../../components/Icon/Settings.vue";
 
 export default {
   name: "SidenavList",
@@ -149,7 +149,7 @@ export default {
     //CustomerSupport,
     //Document,
     Spaceship,
-    Settings,
+    //Settings,
   },
   methods: {
     getRoute() {
