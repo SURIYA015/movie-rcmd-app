@@ -27,7 +27,7 @@
       </li>
 
       <li class="nav-item">
-        <sidenav-collapse navText="Best Malyalam Movies" :to="{ name: 'Rtl' }">
+        <sidenav-collapse navText="Best Malyalam Movies" :to="{ name: 'MalyalamMovies' }">
           <template #icon>
             <credit-card />
           </template>
@@ -50,7 +50,7 @@
         </sidenav-collapse>
       </li>
 
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <sidenav-collapse
           navText="Virtual Reality"
           :to="{ name: 'Virtual Reality' }"
@@ -59,7 +59,7 @@
             <box3d />
           </template>
         </sidenav-collapse>
-      </li>
+      </li> -->
       <li class="nav-item">
         <sidenav-collapse navText="RTL" :to="{ name: 'Rtl' }">
           <template #icon>
@@ -121,7 +121,7 @@ import SidenavCard from "./SidenavCard.vue";
 import Shop from "../../components/Icon/Shop.vue";
 import Office from "../../components/Icon/Office.vue";
 import CreditCard from "../../components/Icon/CreditCard.vue";
-import Box3d from "../../components/Icon/Box3d.vue";
+//import Box3d from "../../components/Icon/Box3d.vue";
 import CustomerSupport from "../../components/Icon/CustomerSupport.vue";
 import Document from "../../components/Icon/Document.vue";
 import Spaceship from "../../components/Icon/Spaceship.vue";
@@ -145,7 +145,7 @@ export default {
     Shop,
     Office,
     CreditCard,
-    Box3d,
+    //Box3d,
     CustomerSupport,
     Document,
     Spaceship,

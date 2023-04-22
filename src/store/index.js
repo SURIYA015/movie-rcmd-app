@@ -3,13 +3,16 @@ import bootstrap from "bootstrap/dist/js/bootstrap.min.js";
 import tamilmovies from "./tamilmovies";
 import telugumovies from "./telugumovies";
 import kannadamovies from "./kannadamovies";
+import malyalammovies from "./malyalammovies";
+
 
 
 export default createStore({
   modules:{
     tamilmovies,
     telugumovies,
-    kannadamovies
+    kannadamovies,
+    malyalammovies
   },
   state: {
     hideConfigButton: false,
