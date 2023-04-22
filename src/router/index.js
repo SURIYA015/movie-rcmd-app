@@ -3,7 +3,7 @@ import TamilMovies from "@/views/TamilMovies.vue";
 import TeluguMovies from "@/views/TeluguMovies.vue";
 import KannadaMovies from "@/views/KannadaMovies.vue";
 import MalyalamMovies from "@/views/MalyalamMovies.vue";
-import Profile from "@/views/Profile.vue";
+import HindiMovies from "@/views/HindiMovies.vue";
 import Rtl from "@/views/Rtl.vue";
 import SignIn from "@/views/SignIn.vue";
 import SignUp from "@/views/SignUp.vue";
@@ -35,9 +35,9 @@ const routes = [
     component: MalyalamMovies,
   },
   {
-    path: "/profile",
-    name: "Profile",
-    component: Profile,
+    path: "/hindimovies",
+    name: "HindiMovies",
+    component: HindiMovies,
   },
   {
     path: "/rtl-page",

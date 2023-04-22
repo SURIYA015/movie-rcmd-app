@@ -35,7 +35,7 @@
       </li>
 
       <li class="nav-item">
-        <sidenav-collapse navText="Best Hindi Movies" :to="{ name: 'Rtl' }">
+        <sidenav-collapse navText="Best Hindi Movies" :to="{ name: 'HindiMovies' }">
           <template #icon>
             <credit-card />
           </template>
@@ -75,20 +75,20 @@
           PAGES
         </h6>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <sidenav-collapse navText="Profile" :to="{ name: 'Profile' }">
           <template #icon>
             <customer-support />
           </template>
         </sidenav-collapse>
-      </li>
-      <li class="nav-item">
+      </li> -->
+      <!-- <li class="nav-item">
         <sidenav-collapse navText="Sign In" :to="{ name: 'Sign In' }">
           <template #icon>
             <document />
           </template>
         </sidenav-collapse>
-      </li>
+      </li> -->
       <li class="nav-item">
         <sidenav-collapse navText="Sign Up" :to="{ name: 'Sign Up' }">
           <template #icon>
@@ -122,8 +122,8 @@ import Shop from "../../components/Icon/Shop.vue";
 import Office from "../../components/Icon/Office.vue";
 import CreditCard from "../../components/Icon/CreditCard.vue";
 //import Box3d from "../../components/Icon/Box3d.vue";
-import CustomerSupport from "../../components/Icon/CustomerSupport.vue";
-import Document from "../../components/Icon/Document.vue";
+// import CustomerSupport from "../../components/Icon/CustomerSupport.vue";
+// import Document from "../../components/Icon/Document.vue";
 import Spaceship from "../../components/Icon/Spaceship.vue";
 import Settings from "../../components/Icon/Settings.vue";
 
@@ -146,8 +146,8 @@ export default {
     Office,
     CreditCard,
     //Box3d,
-    CustomerSupport,
-    Document,
+    //CustomerSupport,
+    //Document,
     Spaceship,
     Settings,
   },

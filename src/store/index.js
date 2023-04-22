@@ -4,6 +4,8 @@ import tamilmovies from "./tamilmovies";
 import telugumovies from "./telugumovies";
 import kannadamovies from "./kannadamovies";
 import malyalammovies from "./malyalammovies";
+import hindimovies from "./hindimovies";
+
 
 
 
@@ -12,7 +14,8 @@ export default createStore({
     tamilmovies,
     telugumovies,
     kannadamovies,
-    malyalammovies
+    malyalammovies,
+    hindimovies
   },
   state: {
     hideConfigButton: false,
